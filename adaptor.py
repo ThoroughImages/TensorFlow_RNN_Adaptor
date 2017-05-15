@@ -6,6 +6,8 @@ replace = dict()
 for index in n_layers:
     replace['rnn/rnn/MultiRNNCell/Cell' + str(index) + '/BasicLSTMCell/Linear/Matrix'] = \
         'rnn/rnn/multi_rnn_cell/cell_' + str(index) + '/basic_lstm_cell/weights'
+    replace['rnn/rnn/MultiRNNCell/Cell' + str(index) + '/BasicLSTMCell/Linear/Bias'] = \
+        'rnn/rnn/multi_rnn_cell/cell_' + str(index) + '/basic_lstm_cell/biases'
 
 
 with tf.Session() as sess:
