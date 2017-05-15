@@ -13,7 +13,7 @@ for index in n_layers:
 with tf.Session() as sess:
     saver = tf.train.Saver(max_to_keep=1000)
     sess.run(tf.initialize_all_variables())
-    saver.restore(sess, "./4-64.ckpt")
+    saver.restore(sess, "./old.ckpt")
     names_to_vars = {v.op.name: v for v in tf.all_variables()}
     for key in replace.keys():
         bias_var = names_to_vars[key]
