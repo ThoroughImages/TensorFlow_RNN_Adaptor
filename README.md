@@ -15,7 +15,7 @@ By using this adapter, you can transfer TF 0.12 RNN model into TF 1.0.
 
 `adaptor.py`  Transfer TF 0.12 RNN model into TF 1.0.
 
-##Related Links
+## Related Links
 [1] https://github.com/tensorflow/tensorflow/issues/7664
 
 [2] https://github.com/tensorflow/tensorflow/issues/2768
